@@ -179,7 +179,7 @@
         (call $setPiece (get_local $toX) (get_local $toY) (get_local $curpiece))
         (call $setPiece (get_local $fromX) (get_local $fromY) (i32.const 0))
         (if (call $shuldCrown (get_local $toY) (get_local $curpiece))
-            (then (call $crownPiece (get_local $fromX) (get_local $fromY))))
+            (then (call $crownPiece (get_local $toX) (get_local $toY))))
         (call $notify_piecemoved (get_local $fromX) (get_local $fromY) (get_local $toX) (get_local $toY))
         (i32.const 1))
 
