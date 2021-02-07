@@ -24,7 +24,7 @@ fetch('./checkers.wasm').then(response =>
         instance.exports.move(1, 1, 1, 0); //W
 
         let res = instance.exports.move(0, 0, 0, 2)
-        document.getElementById("container").innerText = res;
+        document.getElementById("container").innerText = "長門可愛い " + res ;
         console.log("At end, turn owner is" + instance.exports.getTurnOwner());
 
     }).catch(console.error);
