@@ -75,6 +75,10 @@ impl GameEngine {
         }
     }
 
+    pub fn current_turn(&self) -> PieceColor {
+        self.current_turn
+    }
+
     fn advance_turn(&mut self) {
         if self.current_turn == PieceColor::Black {
             self.current_turn = PieceColor::White
