@@ -1,2 +1,4 @@
 rustcheckers/rustycheckers/target/
 rustwasmhello
+bindgenhello/bindgenhello/node_modules/
+bindgenhello/bindgenhello/target/
